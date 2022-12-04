@@ -1,0 +1,120 @@
+.formInputParent {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.formInputParent .steps {
+    font-size: 20px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+.formData {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 0%;
+}
+
+.formData .formDataText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formData .formDataText .subText {
+    font-size: 16px;
+    color: #656565;
+}
+
+.formData .inputTitle {
+    font-size: 20px;
+}
+
+.formData .formInput {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+.formData .formInput input {
+    padding: 15px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    outline: none;
+    background: #f5f5f5;
+}
+
+.formData .formInput textarea {
+    padding: 15px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    outline: none;
+    background: #f5f5f5;
+}
+
+.formData .formInput select {
+    padding: 15px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    outline: none;
+    background: #f5f5f5;
+}
+
+
+.formData .formInput .formAction {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.formData .formInput .formAction button {
+    padding: 12px 35px;
+    margin-top: 10px;
+}
+
+.team-members-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    background: #efefef9e;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.team-members-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-members-container div label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.team-members-container div input {
+    padding: 15px 15px;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    outline: none;
+    background: #e4e4e4;
+    border: 1px solid #d2d2d2;
+}
+
+.addMoreTeam {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
