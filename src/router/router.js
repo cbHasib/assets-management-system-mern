@@ -7,6 +7,9 @@ import DashboardLayout from "../Layout/Dashboard/DashboardLayout";
 import Dashboard from "../Pages/Dashboard/Dashboard/Dashboard";
 import Target from "../Pages/Dashboard/Target/Target/Target";
 import AddNewTarget from "../Pages/Dashboard/Target/AddNewTarget/AddNewTarget";
+import Team from "../Pages/Dashboard/Team/Team";
+import Report from "../Pages/Dashboard/Report/Report";
+import Setting from "../Pages/Dashboard/Setting/Setting";
 
 export const routes = createBrowserRouter([
   {
@@ -24,6 +27,18 @@ export const routes = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "/dashboard/team",
+        element: <Team />,
+      },
+      {
+        path: "/dashboard/report",
+        element: <Report />,
+      },
+      {
+        path: "/dashboard/setting",
+        element: <Setting />,
       },
       {
         path: "/dashboard/target",

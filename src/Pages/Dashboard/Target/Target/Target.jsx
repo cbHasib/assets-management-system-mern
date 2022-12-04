@@ -1,8 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Table from "../../../../components/Table/Table";
+import useScrollToTop from "../../../../hooks/useScrollToTop";
+import useTitle from "../../../../hooks/useTitle";
 import "./Target.css";
 
 const Target = () => {
+  useTitle("Target");
+  useScrollToTop();
   const navigate = useNavigate();
   return (
     <div>
@@ -21,6 +26,10 @@ const Target = () => {
           <button>Scan Target</button>
           <button>Delete Multiple Target</button>
         </div>
+      </div>
+
+      <div className="target-table">
+        <Table />
       </div>
     </div>
   );

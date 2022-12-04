@@ -23,16 +23,12 @@ const Login = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    if (password.length < 6) {
-      alert("Password must be at least 6 characters long");
-      return;
-    }
     setLoad(true);
 
     try {
       signIn(email, password)
-        .then((result) => {
-          toast.success("Login Successful");
+        .then(() => {
+          toast.success(`Login Successful`);
           setLoad(false);
           navigate(from, { replace: true });
         })

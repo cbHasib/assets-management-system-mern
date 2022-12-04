@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import SmallSpinner from "../../../../../components/Spinner/SmallSpinner";
 
-const AddTeam = ({ formData, setFormData, formSubmit }) => {
+const AddTeam = ({ formData, setFormData, formSubmit, loading }) => {
   const [memberNo, setMemberNo] = useState(1);
 
   return (
@@ -67,6 +68,7 @@ const AddTeam = ({ formData, setFormData, formSubmit }) => {
         <div className="formInput">
           <div className="formAction">
             <button
+              disabled={loading}
               onClick={() => {
                 if (
                   formData.team[memberNo - 1]?.name &&
@@ -78,7 +80,13 @@ const AddTeam = ({ formData, setFormData, formSubmit }) => {
                 }
               }}
             >
-              Send Invite
+              {loading ? (
+                <div className="flex flex-justify-center">
+                  <SmallSpinner />
+                </div>
+              ) : (
+                "Send Invite"
+              )}
             </button>
           </div>
         </div>

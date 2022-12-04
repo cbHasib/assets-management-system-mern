@@ -73,7 +73,7 @@ const DashboardLayout = () => {
       <div className="dashboardHeader">
         {/* Style added in App.css */}
         <div className="flex w-full flex-justify-between flex-align-center">
-          <span>Logo</span>
+          <span className="logo-text">Logo</span>
           <button onClick={logout}>Logout</button>
         </div>
       </div>

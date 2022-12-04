@@ -5,8 +5,8 @@ const ErrorPage = () => {
   useTitle("Page Not Found");
 
   return (
-    <div class="flex w-full flex-justify-center flex-align-center h-screen">
-      <span class="tracking-widest uppercase">404 | Not Found</span>
+    <div className="flex w-full flex-justify-center flex-align-center h-screen">
+      <span className="tracking-widest uppercase">404 | Not Found</span>
     </div>
   );
 };

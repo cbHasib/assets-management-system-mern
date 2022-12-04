@@ -1,0 +1,35 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-container {
+    background: #f3f3f3;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+
+    text-align: left;
+    border-bottom: 2px solid #E1E1E1;
+    /* border: 1px solid #E1E1E1; */
+}
+
+th,
+td {
+    padding: 10px 15px;
+}
+
+
+td a {
+    color: #0071CC;
+    text-decoration: underline;
+}
+
+/* tbody tr:nth-child(odd) {
+    background-color: #F5F5F5;
+} */
